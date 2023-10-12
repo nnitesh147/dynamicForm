@@ -1,0 +1,147 @@
+export const data = {
+  form: {
+    sections: [
+      {
+        section_title: "Application Form Using Json",
+        fields: [
+          {
+            name: "name",
+            label: "Name",
+            required: true,
+            hidden: true,
+            data_type: "String",
+            html_element: "TextField",
+            error: true,
+            variant: "outlined",
+          },
+          {
+            name: "email",
+            label: "Email",
+            hidden: false,
+            required: true,
+            data_type: "email",
+            html_element: "TextField",
+            error: false,
+            variant: "outlined",
+          },
+          {
+            name: "age",
+            label: "Age",
+            hidden: false,
+            required: true,
+            data_type: "Integer",
+            html_element: "TextField",
+            error: false,
+            variant: "outlined",
+          },
+          {
+            name: "phone",
+            label: "Phone",
+            hidden: true,
+            required: true,
+            data_type: "Integer",
+            html_element: "TextField",
+            error: false,
+            variant: "outlined",
+          },
+          {
+            name: "address",
+            label: "Address",
+            minRows: "3",
+            placeholder: "Enter Address",
+            html_element: "TextArea",
+            variant: "outlined",
+          },
+          {
+            name: "country",
+            label: "Country",
+            hidden: false,
+            required: true,
+            data_type: "Image",
+            error: false,
+            variant: "outlined",
+            placeholder: "Choose Country",
+            options: [
+              {
+                label: "India",
+                value: "india",
+              },
+              {
+                label: "Canada",
+                value: "canada",
+              },
+              {
+                label: "England",
+                value: "england",
+              },
+            ],
+            html_element: "Select",
+          },
+          {
+            name: "hobby",
+            label: "Documents",
+            hidden: false,
+            error: false,
+            variant: "outlined",
+            options: [
+              {
+                label: "Aadhar Card",
+                value: "aadharCard",
+              },
+              {
+                label: "Pan Card",
+                value: "panCard",
+              },
+              {
+                label: "Voter Card",
+                value: "voterCard",
+              },
+            ],
+            required: false,
+            html_element: "multiple",
+          },
+        ],
+        feilds2: [
+          {
+            section_title3: "What type of Loan are you applying for?",
+            required: false,
+            checkFeilds: [
+              {
+                name: "House Loan",
+                value: "House Loan",
+                html_element: "checkbox",
+                defaultChecked: false,
+                hidden: false,
+                label: "House Loan",
+              },
+              {
+                name: "Business Loan",
+                value: "Business Loan",
+                html_element: "checkbox",
+                defaultChecked: false,
+                hidden: false,
+                label: "Business Loan",
+              },
+              {
+                name: "Personal Loan",
+                value: "Personal Loan",
+                html_element: "checkbox",
+                defaultChecked: false,
+                hidden: false,
+                label: "Personal Loan",
+              },
+              {
+                name: "Car Loan",
+                value: "Car Loan",
+                html_element: "checkbox",
+                defaultChecked: false,
+                hidden: false,
+                label: "Car Loan",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+};

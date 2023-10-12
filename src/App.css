@@ -1,0 +1,20 @@
+.form-outer-wrapper {
+  width: 50%;
+  margin: 50px auto;
+  box-shadow: 0px 0pc 9px #083a5d;
+  padding: 20px 20px 20px 25px;
+  border-radius: 10px;
+}
+
+.form-outer-wrapper .btn-css {
+  margin: 20px;
+}
+.form-outer-wrapper .textArea {
+  width: 320px;
+}
+.form-outer-wrapper .drodownn {
+  width: 500px;
+}
+.form-outer-wrapper .lbl label {
+  margin-top: 8px;
+}
