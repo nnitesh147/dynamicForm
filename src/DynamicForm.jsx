@@ -58,6 +58,9 @@ const DynamicForm = () => {
               onChange={handleInputChange}
               {...register(key, field.validation)}
             >
+              <option value={""} hidden>
+                Select an Option
+              </option>
               {field.options.map((val) => (
                 <option key={val.value} value={val.value}>
                   {val.value}
