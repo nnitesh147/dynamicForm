@@ -102,6 +102,33 @@ const DynamicForm = () => {
             />
           </div>
         );
+
+      case "checkbox":
+        return (
+          <div key={key} style={{ display: "flex", gap: "9px" }}>
+            <label>{field.label}: </label>
+            {field.options.map((val) => (
+              <div key={val.value}>
+                <label>{val.label}</label>
+                <input
+                  type="checkbox"
+                  name={key}
+                  checked={val.val}
+                  value={val.value}
+                  onChange={handleInputChange}
+                  {...register(key, field.validation)}
+                />
+              </div>
+            ))}
+            <ErrorMessage
+              errors={errors}
+              name={key}
+              render={({ message }) => (
+                <p style={{ color: "red" }}>{message}</p>
+              )}
+            />
+          </div>
+        );
       default:
         return null;
     }

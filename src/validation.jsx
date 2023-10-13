@@ -73,4 +73,29 @@ export const schema = {
       },
     ],
   },
+
+  Food: {
+    label: "Food",
+    type: "checkbox",
+    validation: {
+      required: "Food is required",
+    },
+    options: [
+      {
+        name: "Apple",
+        value: "Apple",
+        label: "Apple",
+      },
+      {
+        name: "Orange",
+        value: "Orange",
+        label: "Orange",
+      },
+      {
+        name: "Others",
+        value: "Others",
+        label: "Others",
+      },
+    ],
+  },
 };
