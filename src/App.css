@@ -6,8 +6,8 @@
   border-radius: 10px;
 }
 
-.form-outer-wrapper .btn-css {
-  margin: 20px;
+.form-outer-wrapper input {
+  margin: 10px;
 }
 .form-outer-wrapper .textArea {
   width: 320px;
